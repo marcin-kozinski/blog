@@ -1,6 +1,6 @@
 # You don't need a custom share sheet for that!
 
-### Native share sheets have come a long way on Android and there's really no excuse for implementing custom share sheets anymore. Right?
+#### Native share sheets have come a long way on Android and there's really no excuse for implementing custom share sheets anymore. Right?
 
 At Pocket we sat down a couple years ago to retire our old custom share UI and switch to the native one, but we uncovered two product requirements that we thought would block us:
 
@@ -99,12 +99,13 @@ fun createShareIntentWithCallback(context: Context): Intent {
 }
 ```
 
-It's not the most straighforward of things, but once you're done with the special ceremony required by the framework, it works like a normal callback or rather a normal broadcast receiver.
+It's not the most straightforward of things, but once you're done with the special ceremony required by the framework, it works like a normal callback or rather a normal broadcast receiver.
 
 ## Conclusion
 
-If you, your coworkers, your boss or—worse yet—your client thought you'll have to invest in building a custom share sheet, because otherwise there's no way to customise the shared text on a per-app basis or no way to track where your users share to, then you can be the hero that explains it is possible to save all this engineering and design effort and satisfy your requirements while showing the users a polished, familiar share experience.
+If you, your co-workers, your boss or—worse yet—your client thought you'll have to invest in building a custom share sheet, because otherwise there's no way to customise the shared text on a per-app basis or no way to track where your users share to, then you can be the hero that explains it is possible to save all this engineering and design effort and satisfy your requirements while showing the users a polished, familiar share experience.
 
-Clients and bosses can be very creative, so there still might be some other reasons to implement a custom share sheet. But luckly the Android team handled at least these two common cases in the native one, which should greatly reduce how often you don't have a choice and have to go with a custom implementation. Thanks Android team!
+Clients and bosses can be very creative, so there still might be some other reasons to implement a custom share sheet. But luckily the Android team handled at least these two common cases in the native one, which should greatly reduce how often you don't have a choice and have to go with a custom implementation. Thanks Android team!
 
-You can see complete code examples from this post [here](https://github.com/marcin-kozinski/blog/tree/native-share-sheet-customisation/_drafts/native-share-sheet-customisation/NativeShareSheetCustomizations.kt). If you have any questions or comments, reply to this toot (TODO).
+You can see [complete code examples](https://github.com/marcin-kozinski/blog/blob/main/2023-02-02-native-share-sheet-customisation/NativeShareSheetCustomizations.kt) from this post and the [source of the post itself](https://github.com/marcin-kozinski/blog/blob/main/2023-02-02-native-share-sheet-customisation/README.md) on Github (if you see anything from glaring errors to typos, please send me a PR!). 
+If you have any questions or comments, hit me up on [Mastodon](https://androiddev.social/@marcin).
